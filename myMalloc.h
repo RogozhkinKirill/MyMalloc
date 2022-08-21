@@ -21,4 +21,10 @@ char * myMalloc(int sz);
  */
 char * myFree(char * ptr_slice);
 
+/**
+ * @brief myAvail return the size of free memory
+ * @return size of free memory
+ */
+int myAvail(void);
+
 #endif // MYMALLOC_H

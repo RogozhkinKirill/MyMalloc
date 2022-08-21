@@ -87,3 +87,14 @@ char * myFree(char * ptr_slice) {
 
     return NULL;
 }
+
+int myAvail(void) {
+    int res = 0;
+
+    for(int i=0; i<MAX_SLICES; i++) {
+        if(free_slices[i].begin)
+            res += free_slices[i].size;
+    }
+
+    return res;
+}
